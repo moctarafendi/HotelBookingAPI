@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  hotelbookingapi:
+    image: ${DOCKER_REGISTRY-}hotelbookingapi
+    build:
+      context: .
+      dockerfile: Dockerfile
